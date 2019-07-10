@@ -25,7 +25,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		size = (size_t)(ft_strlen((char*)s2));
 	else
 		return (NULL);
-	if (!(result = ft_memalloc(size)))
+	if (!(result = ft_memalloc(size + 1)))
 		return (NULL);
 	if (s1)
 		result = ft_strcpy(result, (char*)s1);
